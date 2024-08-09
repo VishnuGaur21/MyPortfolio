@@ -1,0 +1,47 @@
+.myNav{
+    font-size: 30px;
+    gap: 20px;
+  }
+  
+.logo{
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    animation: slideRight 1s ease forwards ;
+    font-size: 35px;
+  }
+
+
+.heading{
+  font-size: 30px;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+  
+.myimg img{
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  padding: 30px;
+  margin-top: 50px;
+  justify-content: center;
+    
+}
+
+.container{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+
+}
+
+body{
+  background-image: url(https://t3.ftcdn.net/jpg/02/74/63/90/360_F_274639050_ddLeyFuQGwEjtTP0e2Y9ZZesSo2Mj6JD.jpg);
+}

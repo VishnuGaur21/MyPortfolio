@@ -1,0 +1,158 @@
+.myNav{
+  font-size: 30px;
+  gap: 20px;
+}
+
+
+.logo{
+  position: relative;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#heading{
+  align-items: center;
+  margin-top: 70px;
+  position: relative;
+  animation: pulse 2s infinite;
+  /* background-color: black; */
+
+}
+
+.img img{
+  height: 400px;
+  margin-left: 50px;
+}
+
+.myimg{
+  /* margin: 0px; */
+  height: 400px;
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  border-radius: 100px;  
+}
+
+.content {
+  display: flex; 
+  align-items: center;
+  gap: 2rem;
+  margin-top: 15px;
+  
+  
+}
+
+body{
+  /* background-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/556/708/small_2x/vector-apr-2018-58.jpg); */
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-black-creative-frame-texture-image_14731.jpg);
+  color: white;
+}
+
+.text-content h1,.text-content h5 {
+  opacity: 0; 
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Education section */
+.education{
+  height: 100vh;
+}
+.accordion-button {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.accordion-body {
+  padding: 20px;
+}
+
+.backgroundimg{
+  background-image: url(https://as2.ftcdn.net/v2/jpg/05/05/60/91/1000_F_505609141_pZYpYFNlzk4hdhMRwTuZkxjEBbgP2S0v.jpg);
+  color: white;
+}
+
+/* Skills */
+#skills {
+  
+  height: 70vh;
+  padding: px 0;
+  color: white;
+}
+
+#skills h3{
+  text-align: center;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  color: white;
+  /* text-align: center; */
+  line-height: 20px;
+}
+
+.row{
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 10px;
+
+}
+.left{
+  width: 50%;
+}
+
+.right{
+  width: 50%;
+}
+
+.allheadings{
+  margin: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .allheadings::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #f00;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+  } 
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);   
+
+  }
+};

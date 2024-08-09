@@ -1,0 +1,99 @@
+.content{
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*gsAW5P7GRrh2R2lzfJDbQg.jpeg') ;;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    margin-top: 56px;
+    position: relative;
+}
+
+.myNav{
+  font-size: 30px;
+  gap: 20px;
+}
+
+.navlinks{
+  opacity: 0;
+  animation: slideTop .5s ease forwards;
+}
+
+.btn{
+  background-color: blue;
+  color: white;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.logo{
+  position: relative;
+  font-size: 25px;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideRight 1s ease forwards ;
+  font-size: 35px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 16px;
+    padding: 67px;
+}
+
+.myimg{
+    margin: 50px;
+    height: 400px;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+
+.animated-text {
+    animation: myanimation 5s ease-in-out ; /* Adjust properties as needed */
+  }
+
+  @keyframes myanimation {
+    from { opacity: 0; } /* Start with 0% opacity (invisible) */
+    to { opacity: 1; }   /* End with 100% opacity (fully visible) */
+  }
+
+  .grow-image {
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+  }
+  
+  .grow-image:hover {
+    transform: scale(1.1); /* Increase size by 10% */
+  }
+  
+  
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
